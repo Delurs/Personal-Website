@@ -38,29 +38,74 @@ export const softSkills = [
   { title: 'Attention to Detail', desc: 'The last 5% — spacing, micro-copy, edge cases — is where good becomes memorable.', icon: ScanEye, tint: 'bg-white/80' },
 ]
 
-export const project = {
-  title: 'Campus Eats',
-  tagline: 'A food-discovery app that helps students find affordable meals near campus — researched, designed, and built end-to-end.',
-  role: 'Product Designer & Developer',
-  timeline: '8 weeks · 2026',
-  tags: ['UX Research', 'UI Design', 'FastAPI', 'Supabase'],
-  metrics: [
-    { value: '40+', label: 'Students interviewed' },
-    { value: '3', label: 'Major design iterations' },
-    { value: '90%', label: 'Prototype task success' },
-  ],
-  overview:
-    'Students waste money and time deciding where to eat. Campus Eats aggregates budget-friendly stalls, tracks crowd levels, and personalizes recommendations based on taste and budget.',
-  challenge:
-    'Existing food apps optimize for restaurants and delivery fees — the opposite of what a broke student needs. I had to design for small screens, spotty campus Wi-Fi, and decision fatigue.',
-  contributions: [
-    'Conducted 40+ user interviews and affinity-mapped pain points',
-    'Designed flows & wireframes, then high-fidelity Figma prototypes',
-    'Built the full stack: FastAPI backend with Supabase auth & database',
-    'Ran usability tests and iterated until tasks felt effortless',
-  ],
-  outcome:
-    'The final prototype hit a 90% task-success rate in testing, and the live MVP now serves a pilot group of students with <2s page loads.',
-  learnings:
-    'Simplicity is a feature. Cutting half my "clever" ideas after user testing taught me that the best interface is the one nobody has to think about.',
-}
+export const projects = [
+  {
+    id: 'elocia',
+    title: 'Project ELOCIA',
+    tagline: 'A computer vision platform evaluating Filipino Sign Language expression for Deaf and Hard-of-Hearing elementary students.',
+    role: 'Lead Developer & Architect',
+    timeline: '2026',
+    tags: ['Computer Vision', 'Python', 'FastAPI', 'FSL'],
+    metrics: [
+      { value: 'Real-time', label: 'Vision Tracking' },
+      { value: 'Local', label: 'Field Deployment' },
+      { value: 'EdTech', label: 'Sector' },
+    ],
+    overview: 'Designed for Cabuyao Central School, ELOCIA bridges the gap in accessible tech education by using computer vision to evaluate and encourage Filipino Sign Language expression among young students.',
+    challenge: 'Building a system that is highly accurate with localized gestures while ensuring the UI remains incredibly intuitive and encouraging for elementary-aged children.',
+    contributions: [
+      'Spearheaded the technical development and system architecture',
+      'Integrated computer vision models with a fast, responsive FastAPI backend',
+      'Coordinated data collection and local field research with educators'
+    ],
+    outcome: 'A robust, accessible platform that directly impacts early childhood education for the Deaf and Hard-of-Hearing community.',
+    learnings: 'When designing for accessibility, empathy must be hardcoded into the architecture, not just the interface.',
+    featured: true // Makes this span the full width in our grid
+  },
+  {
+    id: 'aurora',
+    title: 'Aurora',
+    tagline: 'A smart refrigerator UI/UX concept designed to optimize food management and reduce household waste.',
+    role: 'UI/UX Designer',
+    timeline: '2026',
+    tags: ['UI/UX', 'Figma', 'Prototyping'],
+    metrics: [
+      { value: 'High-Fi', label: 'Wireframes' },
+      { value: 'IoT', label: 'Integration' },
+      { value: 'Mobile', label: 'Responsive' },
+    ],
+    overview: 'Aurora tackles everyday food waste through a connected appliance interface that tracks inventory, suggests recipes based on expiring items, and automates grocery lists.',
+    challenge: 'Condensing complex inventory data into a clean, glanceable mobile and tablet interface that users can interact with effortlessly in a busy kitchen environment.',
+    contributions: [
+      'Mapped out user flows for inventory input and recipe discovery',
+      'Designed a comprehensive design system and high-fidelity prototypes in Figma',
+      'Created micro-interactions that make logging food feel rewarding'
+    ],
+    outcome: 'A polished, highly visual prototype demonstrating how IoT interfaces can seamlessly blend into daily domestic life.',
+    learnings: 'The best UI gets out of the way. If a smart home app takes more than three taps to do its job, it fails.',
+    featured: false
+  },
+  {
+    id: 'boxchamp',
+    title: 'BOXCHAMP',
+    tagline: 'A bold, high-energy web platform prototype for boxing training and athletic conditioning.',
+    role: 'UI Designer',
+    timeline: '2026',
+    tags: ['Web Design', 'Figma', 'Visual Identity'],
+    metrics: [
+      { value: 'Web', label: 'Platform' },
+      { value: 'Dark Mode', label: 'Aesthetic' },
+      { value: 'Concept', label: 'Phase' },
+    ],
+    overview: 'BOXCHAMP is a conceptual training site designed to motivate athletes. It combines bold typography, high-contrast imagery, and seamless class scheduling.',
+    challenge: 'Translating the physical intensity of boxing into a digital layout without making the interface feel cluttered or overwhelming.',
+    contributions: [
+      'Developed a striking visual identity and typography hierarchy',
+      'Prototyped user journeys for class bookings and trainer profiles',
+      'Designed a responsive web layout focusing on dark-mode aesthetics'
+    ],
+    outcome: 'An immersive digital environment that visually communicates energy and discipline.',
+    learnings: 'Whitespace (or dark space) is a powerful tool for controlling user focus and energy on a page.',
+    featured: false
+  }
+]
